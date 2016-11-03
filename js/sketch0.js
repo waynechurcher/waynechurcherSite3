@@ -11,9 +11,9 @@
   var windowY;
   var name;
   var h2;// if i want to intro an element
-  var h1 = getElementsByTagName(h1);
+  var menu;
   var init;
-  var Noise = new P5.Noise(brown);//noise
+
   var yoff;
   var yoff1;
   var yincrement;
@@ -56,8 +56,9 @@
         };
 
       }
-    }
 
+
+    }
 
   }
   function draw() {  //if window changes size

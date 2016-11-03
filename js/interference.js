@@ -151,7 +151,7 @@ for (var i=0; i<barsR.length;i++){
   rect(showBar.pos, 0, showBar.width, windowHeight);
   barsR[i].pos -= vel2;
   console.log(vel1, barsR.length-1);
-  if (barsR[i].pos<0){
+  if (barsR[i].pos<-50){
     barsR.splice(i,1);//taking out element if out of screen
 
   }
