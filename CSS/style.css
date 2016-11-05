@@ -40,7 +40,7 @@
       position:absolute;
       font-family: 'Droid Serif',serif;
       opacity:50%;
-      color:##FA3FE1;
+      color:#676e70;
       font-size: 3em;
     }
     #smallTitle{
@@ -52,6 +52,7 @@
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(119, 119, 119, 1);
+    
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 15px;
@@ -71,11 +72,13 @@
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(85, 85, 85, .1);
+    color: rgba(85, 85, 85, 1);
     background-color: rgba(181, 185, 199, 4);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #b5b9c7;
+    margin:0;
+    border:0;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
