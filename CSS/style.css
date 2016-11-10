@@ -7,6 +7,7 @@
     vertical-align: top;
       }
 
+
   header{
     position:absolute;
     }
@@ -15,7 +16,7 @@
       }
 
   div.parent-holder {
-    position:absolute;;
+    position:absolute;
      left: 0px;
      top: 0px;
      z-index: -1;
@@ -40,7 +41,7 @@
       position:absolute;
       font-family: 'Droid Serif',serif;
       opacity:50%;
-      color:#676e70;
+      color:#c6c1c1;
       font-size: 3em;
     }
     #smallTitle{
@@ -49,15 +50,20 @@
       top: 0px;
 
     }
+#custom-bootstrap-menu{
+  padding:0;
+  margin-bottom: 0;
 
+}
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(119, 119, 119, 1);
+
 
 
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 15px;
-    background-color: rgba(248, 248, 248, 1);
+    background-color: rgba(248, 248, 248);
     border-width: 1px;
     border-radius: 0px;
 }
@@ -67,14 +73,14 @@
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(51, 51, 51, 1);
-    background-color: rgba(227, 220, 211, 1);
+    color: rgba(200, 100, 100,1);
+    background-color: rgba(50,50,50,.2);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(85, 85, 85, 1);
-    background-color: rgba(181, 185, 199, 4);
+    background-color: rgba(181, 185, 199);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #b5b9c7;

@@ -1,5 +1,5 @@
   var diamonds = [];// object array
-  var numX =16;  //enter an integer!!for grid along X-axis
+  var numX =8;  //enter an integer!!for grid along X-axis
   var space; //spacing between
   var winRatio;
   var numY;//width/height
@@ -14,12 +14,14 @@
   var menu;
   var init;
 
-  var yoff;
+  var yoff; // noise variables for element movement
   var yoff1;
   var yincrement;
   var n;
   var n1;
   var h3;
+  var fav1;
+  var fav2; // for favicon image variables
 
 
 
@@ -35,12 +37,16 @@
      winRatio = windowHeight/windowWidth;
      numY = int(numX*winRatio);
      dimens = int(space/4); //width of side of diamonds
-     h3 = createElement('h3','creative space');
+     fav1 = loadImage("images/faviconPart1.png");
+     fav2 = loadImage("images/faviconPart2.png");
+
+
+     h3 = createElement('h3','creative project');
      h1 = createElement('h1','W a y n e  <br>C h u r c h e r');
 
 
      yoff = 0;
-     yoff1 = 0.1;
+     yoff1 = 0.2;
      yincrement = 0.007;
 
      //initialising position and velocity of each oblect
@@ -70,7 +76,7 @@
       }
 
 
-    background(137,150,200);
+    background(250,250, 229);
 
     //to adjust position of sketch in relation to navbar
     navObj = document.getElementById("custom-bootstrap-menu");
@@ -85,19 +91,22 @@
     yoff += yincrement;
     yoff1 += yincrement;
     //noisy position of headers realised
-    //color(100,100,100);
+
     if(windowWidth>windowHeight){
-    h3.position(windowWidth/2,windowHeight/2.0+n+navBtm.bottom)
+    h3.position(windowWidth/2,windowHeight/2.0+n+navBtm.bottom+100)
 
     }else
-    {h3.position(windowWidth/5,windowHeight/2.6+n+navBtm.bottom);
+    {h3.position(windowWidth/5,windowHeight/2.6+n+navBtm.bottom+100);
     }
     h1.position(windowWidth/5,windowHeight/5+n1+navBtm.bottom);
+    image(fav2,windowWidth/3,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
+    tint(255,255,255,150);
+    image(fav1,windowWidth/3,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+    noTint();
 
     noStroke();
-    fill(225,150,68); //orange of sorts
+    fill(200,200,100,50); //orange of sorts
     rectMode(CENTER); //centering coords of diamonds
-
 
     for(i=1;i<numX;i++){
 
@@ -106,7 +115,10 @@
           translate(diamonds[i][j].x+diamonds[i][j].posX,diamonds[i][j].y+diamonds[i][j].posY);
           //console.log(diamonds[i][j].x,diamonds[i][j].y)
           rotate(QUARTER_PI);
+
+
           rect(0,0,dimens,dimens);
+
           pop();
           diamonds[i][j].posX += diamonds[i][j].vx;
           diamonds[i][j].posY += diamonds[i][j].vy;
@@ -121,4 +133,5 @@
 
 
   }
+
   }
