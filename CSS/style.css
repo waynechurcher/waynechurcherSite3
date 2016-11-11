@@ -1,5 +1,8 @@
-@font-face { font-family: DroidSansFallback; src: url('fonts/DroidSansFallback.ttf'); }
-@@font-face {font-family: DroidSerif; src: url('DroidSerif-Regular.ttf')
+@font-face {
+    font-family: DroidSansFallback;
+    src: url('fonts/DroidSansFallback.ttf');
+    }
+@font-face {font-family: DroidSerif; src: url('DroidSerif-Regular.ttf')
 }
   body {
     padding: 0; margin: 0;}
