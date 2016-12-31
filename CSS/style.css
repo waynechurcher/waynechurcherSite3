@@ -1,11 +1,11 @@
 @font-face {
-    font-family: DroidSansFallback;
-    src: url('fonts/DroidSansFallback.ttf');
+    font-family: DroidSansFallback;src:
+   url('fonts/DroidSansFallbackFull.ttf');
     }
-@font-face {font-family: DroidSerif; src: url('DroidSerif-Regular.ttf')
+@font-face {font-family: DroidSerif; src: url('fonts/DroidSerif-Regular.ttf');
 }
   body {
-    padding: 0; margin: 0;}
+    padding: 1; margin: 0;}
   canvas{
     vertical-align: top;
       }
@@ -76,6 +76,10 @@
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(200, 100, 100,1);
+    background-color: rgba(50,50,50,.2);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:active {
     color: rgba(200, 100, 100,1);
     background-color: rgba(50,50,50,.2);
 }
