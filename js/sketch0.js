@@ -95,7 +95,7 @@
     yoff2 += yincrement;
     //noisy position of headers realised
     console.log(n2);
-    background(250,250, 150+int(n2*100));
+    background(250,230, 150+int(n2*100));
 
     if(windowWidth>windowHeight){
       tint(255,255,255,int(n2*100));
