@@ -96,15 +96,19 @@
     //noisy position of headers realised
 
     if(windowWidth>windowHeight){
-    h3.position(windowWidth/2,windowHeight/2.0+n+navBtm.bottom+100)
+      image(fav2,windowWidth/4,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
+      tint(255,255,255,150);
+      image(fav1,windowWidth/4,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+    h3.position(windowWidth/1.6,windowHeight/6+n+navBtm.bottom+100)
 
     }else
-    {h3.position(windowWidth/4,windowHeight/2.6+n+navBtm.bottom+100);
-    }
+    {h3.position(windowWidth/4,windowHeight/2.+n+navBtm.bottom+100);
+
     //h1.position(windowWidth/5,windowHeight/5+n1+navBtm.bottom);
     image(fav2,windowWidth/2.5,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
     tint(255,255,255,150);
     image(fav1,windowWidth/2.5,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+  }
     noTint();
 
     noStroke();
