@@ -16,9 +16,11 @@
 
   var yoff; // noise variables for element movement
   var yoff1;
+  var yoff2;
   var yincrement;
   var n;
   var n1;
+  var n2;
   var h3;
   var fav1;
   var fav2; // for favicon image variables
@@ -41,12 +43,13 @@
      fav2 = loadImage("images/faviconPart2.png");
 
 
-     h3 = createElement('h3','creative project');
-     h1 = createElement('h1','W a y n e  <br>C h u r c h e r');
+     h3 = createElement('h3','creative projects');
+    // h1 = createElement('h1','W a y n e  <br>C h u r c h e r');
 
 
      yoff = 0;
      yoff1 = 0.2;
+     yoff2 = 0.8;
      yincrement = 0.007;
 
      //initialising position and velocity of each oblect
@@ -96,12 +99,12 @@
     h3.position(windowWidth/2,windowHeight/2.0+n+navBtm.bottom+100)
 
     }else
-    {h3.position(windowWidth/5,windowHeight/2.6+n+navBtm.bottom+100);
+    {h3.position(windowWidth/4,windowHeight/2.6+n+navBtm.bottom+100);
     }
-    h1.position(windowWidth/5,windowHeight/5+n1+navBtm.bottom);
-    image(fav2,windowWidth/3,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
+    //h1.position(windowWidth/5,windowHeight/5+n1+navBtm.bottom);
+    image(fav2,windowWidth/2.5,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
     tint(255,255,255,150);
-    image(fav1,windowWidth/3,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+    image(fav1,windowWidth/2.5,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
     noTint();
 
     noStroke();
