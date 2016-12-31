@@ -79,35 +79,43 @@
       }
 
 
-    background(250,250, 229);
 
     //to adjust position of sketch in relation to navbar
     navObj = document.getElementById("custom-bootstrap-menu");
     navBtm = navObj.getBoundingClientRect();
-    console.log(navBtm.bottom);//bottom coords of nav bar(when false = 52)
+    //console.log(navBtm.bottom);//bottom coords of nav bar(when false = 52)
 
 
     //noise on headers
     n = noise(yoff)*windowHeight/8;
     n1 = noise(yoff1)*windowHeight/6;
-
+    n2 = noise(yoff2);  //extra nise for say...colour??
     yoff += yincrement;
     yoff1 += yincrement;
+    yoff2 += yincrement;
     //noisy position of headers realised
+    console.log(n2);
+    background(250,250, 150+int(n2*100));
 
     if(windowWidth>windowHeight){
+      tint(255,255,255,int(n2*100));
       image(fav2,windowWidth/4,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
-      tint(255,255,255,150);
+      tint(255,255,255,100);
       image(fav1,windowWidth/4,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+
+
     h3.position(windowWidth/1.6,windowHeight/6+n+navBtm.bottom+100)
 
     }else
     {h3.position(windowWidth/4,windowHeight/2.+n+navBtm.bottom+100);
 
     //h1.position(windowWidth/5,windowHeight/5+n1+navBtm.bottom);
+    tint(255,255,255,int(n2*100));
+
     image(fav2,windowWidth/2.5,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
-    tint(255,255,255,150);
+    tint(255,255,255,100);
     image(fav1,windowWidth/2.5,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+
   }
     noTint();
 
