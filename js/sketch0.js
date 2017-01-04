@@ -1,5 +1,5 @@
   var diamonds = [];// object array
-  var numX =8;  //enter an integer!!for grid along X-axis
+  var numX =6;  //enter an integer!!for grid along X-axis
   var space; //spacing between
   var winRatio;
   var numY;//width/height
@@ -96,25 +96,24 @@
     //noisy position of headers realised
     //console.log(n2);
     background(250,230, 150+int(n2*100));
+    imageMode(CENTER);
+
 
     if(windowWidth>windowHeight){
-      tint(255,255,255,int(n2*100));
-      image(fav2,windowWidth/4,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
+      tint(255,255,255,int(n2*140));
+      image(fav2,windowWidth/4,windowHeight/2.5+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
       tint(255,255,255,100);
-      image(fav1,windowWidth/4,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
-
-
-    h3.position(windowWidth/1.6,windowHeight/6+n+navBtm.bottom+100)
-
+      image(fav1,windowWidth/4,windowHeight/2+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+      //h3.position(windowWidth/1.6,windowHeight/6+n+navBtm.bottom)
     }else
-    {h3.position(windowWidth/4,windowHeight/2.+n+navBtm.bottom+100);
+    {//h3.position(windowWidth/4,windowHeight/2.+n+navBtm.bottom+50);
 
     //h1.position(windowWidth/5,windowHeight/5+n1+navBtm.bottom);
-    tint(255,255,255,int(n2*100));
+    tint(255,255,255,int(n2*140));
 
-    image(fav2,windowWidth/2.5,windowHeight/7+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
+    image(fav2,windowWidth/2,windowHeight/2.2+n+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5 );
     tint(255,255,255,100);
-    image(fav1,windowWidth/2.5,windowHeight/5+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
+    image(fav1,windowWidth/2,windowHeight/1.9+n1+navBtm.bottom-100,windowHeight/2.5*0.416,windowHeight/2.5);
 
   }
     noTint();
