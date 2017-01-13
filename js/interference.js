@@ -56,7 +56,7 @@ function setup() {
    winRatio = windowHeight/windowWidth;
    numY = int(numX*winRatio);
    dimens = int(space/4); //width of side of diamonds
-   h3 = createElement('h3','wayne churcher');
+   h3 = createElement('h3','');
    h1 = createElement('h1','Interference');
 
 // setup for Noise
