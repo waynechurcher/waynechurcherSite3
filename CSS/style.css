@@ -35,7 +35,7 @@
   h1{
       font-family: 'DroidSansFallback',sans-serif;
       color: #c6c1c1;
-      font-size:2.5em;
+      font-size:2.0em;
       position: relative;
       bottom: 50%;
       left:10%;
@@ -44,7 +44,7 @@
       position:relative;
       font-family: 'DroidSerif',serif;
       color:#c6c1c1;
-      font-size: 2.2em;
+      font-size: 1.8em;
       bottom: 45%;
       left:20%;
     }
@@ -62,12 +62,16 @@
 
     }
     .infoHeader{
-
+      font-size:2.0em;
+      color: #c6c1c1;
 
     }
 #custom-bootstrap-menu{
+  width:100%;
   padding:0;
   margin-bottom: 0;
+
+
 
 }
 #custom-bootstrap-menu.navbar-default .navbar-brand {
