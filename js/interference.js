@@ -28,12 +28,12 @@ var barsL=[];
 var barsR=[];
 
 
-var initWidthL = 3;//thickness of bar
-var initWidthR = 3;//thickness of bar
+var initWidthL = 4;//thickness of bar
+var initWidthR = 4;//thickness of bar
 
 var vel1;
 var vel2;
-var barsL = [];
+//var barsL = [];
 var newBar;
 var showBar;
 var interval = 50;
@@ -45,12 +45,6 @@ function setup() {
    canvas.parent('sketch-holder');
    windowY = windowHeight;
    windowX = windowWidth;
-
-
-
-
-
-
 
    space = int(windowWidth/numX);
    winRatio = windowHeight/windowWidth;
@@ -81,7 +75,7 @@ function draw() {  //if window changes size
     }
 
 
-  background(150,150,15);
+  background(255,255,255);
 
   //to adjust position of sketch in relation to navbar
   navObj = document.getElementById("custom-bootstrap-menu");
@@ -139,8 +133,8 @@ if(frameCount%interval==0){
 for (var i=0; i<barsL.length;i++){
   showBar = barsL[i];
   noStroke();
-  fill(86,130,35);
-  rect(showBar.pos, 0, showBar.width, windowHeight);
+  fill(0,0,0,200);
+  rect(showBar.pos, 0, showBar.width*2, windowHeight);
   barsL[i].pos += vel1;
   console.log(vel1, barsL.length-1);
   if (barsL[i].pos>windowWidth+50){
@@ -152,8 +146,8 @@ for (var i=0; i<barsL.length;i++){
 for (var i=0; i<barsR.length;i++){
   showBar = barsR[i];
   noStroke();
-  fill(86,130,35);
-  rect(showBar.pos, 0, showBar.width, windowHeight);
+  fill(0,0,0,200);
+  rect(showBar.pos, 0, showBar.width*2, windowHeight);
   barsR[i].pos -= vel2;
   console.log(vel1, barsR.length-1);
   if (barsR[i].pos<-50){
